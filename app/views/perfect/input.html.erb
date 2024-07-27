@@ -1,2 +1,7 @@
 <h1>Perfect#input</h1>
 <p>Find me in app/views/perfect/input.html.erb</p>
+<%= form_tag(result_perfect_path) do %>
+  <%= label_tag :input_data, "Введите числа через запятую:" %><br>
+  <%= text_field_tag :input_data %><br>
+  <%= submit_tag "Проверить" %>
+<% end %>
